@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Food Blog</title>
+</head>
+<body>
+    <h1>Welcome to My Food Blog</h1>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a>
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#latestPosts">Latest Posts</a></li>
+            <li><a href="#popularRecipes">Popular Recipes</a></li>
+            <li><a href="#contactMe">Contact Me</a></li>
+            <li><a href="#subsciption">Subscribe</a></li>
+            <li><a href="#upcomingEvents">Events</a></li>
+        </ul>  
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="aboutMe">
+        <h2>About Me</h2>
+        <p>Hello! I'm the author of this blog. I love cooking and sharing my favorite recipes with the world.</p>
+        <a href="#">Back To Home</a>
+    </section>
+
+    <!-- Latest Posts Section-->
+    <section id="latestPosts">
+        <h2>Latest Posts</h2>
+        <ul>
+            <li>
+                <p><a href="./salad-recipes.html">Healthy Salads for Every Day</a> - Discover quick and easy salad recipes for a healthy lifestyle.</p>
+            </li>
+            <li> 
+               <p><a href="./soup-recipes.html">Comforting Soups for Cold Days</a> - Warm up with these hearty soup recipes. </p>
+            </li> 
+            <li> 
+               <p><a href="./dessert-recipes.html">Sweet Treats to Savor</a> - Indulge in these delightful dessert recipes.</p>
+            </li> 
+        </ul>
+    </section>
+
+    <!-- Popular recipes -->
+    <section id="popularRecipes">
+        <h2>Popular Recipes</h2>
+        <ul>
+            <li><a href="#">Spaghetti Carbonara</a></li> 
+            <li><a href="#">Chicken Rolls</a></li> 
+            <li><a href="#">Vegetarian Tacos</a></li> 
+        </ul>
+        <div>
+            <div class="recipeCard">
+                <img src="spaghetti.jpg" alt="Spaghetti Carbonara">
+                <h4>Recipe 1: Spaghetti Carbonara</h4>
+                <p><strong>Description: </strong>A classic and custom recipe. Enjoy a creamy and delicious plate of carbonara that satisfies every craving.</p>
+                <a href="#">Link to Recipe</a>
+            </div>
+            <div class="recipe-card"> 
+                <img src="recipe2.jpg" alt="Chicken Rolls"> 
+                <h4>RECIPE 2: Chicken Rolls</h4> 
+                <p><strong>Description:</strong> A tasty and satisfying chicken recipe that’s perfect for every occasion.</p> 
+                <a href="#">Link to Recipe</a> 
+            </div> 
+            <div class="recipe-card"> 
+                <img src="recipe3.jpg" alt="Vegetarian Tacos"> 
+                <h4>RECIPE 3: Vegetarian Tacos</h4> 
+                <p><strong>Description:</strong> A vibrant and healthy taco option for vegetarians and taco lovers alike.</p> 
+                <a href="#">Link to Recipe</a> 
+            </div> 
+        </div>     
+    </section>
+
+    <!-- Contact Section -->
+     <section id="contactMe">
+            <h3>Contact Me</h3>
+            <p>If you have any questions or suggestions, feel free to reach out!</p> 
+     </section>
+    
+    <!-- Subscibe Section -->
+     <section id="Subscibe">  
+        <form>
+            <h2>Subscribe to My Blog!</h2>
+            <div>
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+                <label for="name">Name: </label>
+                <input type="name" name="name" id="name" required>
+            </div>
+            <div>
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+     </section>
+
+     <!-- Upcoming Events Section (After subscibe) -->
+    <section id="upcomingEvents">
+        <h2>Upcoming Events</h2>
+        <ul> 
+            <li><strong>Cooking Workshop:</strong> Learn to bake desserts on January 15th.</li> 
+            <li><strong>Live Q&A Session:</strong> Join me on February 10th to ask your cooking-related questions.</li> 
+        </ul> 
+    </section>
+    
+</body>
+</html>

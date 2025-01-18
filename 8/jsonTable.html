@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Json Table Data</h1>
+    <table>
+        <thead>
+            <tr id="tr"></tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+
+    <script>
+       const users = [
+    {name: "namjoon", age: 30, city: "Ilsan"},
+    {name: "seokjin", age: 32, city: "Ilsan"},
+    {name: "yoongi", age: 31, city: "Daegu"},
+    {name: "hoseok", age: 30, city: "Gwangu"},
+    {name: "jimin", age: 30, city: "Busan"},
+    {name: "taehyung", age: 30, city: "Daegu"},
+    {name: "jungkook", age: 28, city: "Busan"}
+    ];
+
+    function getTable(users){
+        let tr = document.getElementById('tr');
+        let tbody = document.getElementById('tbody');
+        
+
+        let headers = Object.keys(users[0]);
+        headers.forEach(header =>{
+            let th = document.createElement('th');
+            th.textContent = header;
+            tr.appendChild(th);
+        });
+        
+
+
+        users.forEach(user => {
+            let tr = document.createElement('tr');
+            headers.forEach(header =>{
+                let td = document.createElement('td');
+                td.textContent = user[header];
+                tr.appendChild(td);
+            })
+            tbody.appendChild(tr);    
+        });
+        
+    }
+    getTable(users);
+
+
+    </script>
+</body>
+</html>
